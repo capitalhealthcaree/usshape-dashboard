@@ -46,7 +46,6 @@ const ContactForm = () => {
             <div className="col-12" ref={divRef} key={i}>
               <div class="card mb-3">
                 <div class="card-body">
-                  <div>{formattedDate}</div>
                   <button
                     className="btn btn-success"
                     onClick={handleDownloadClick}
@@ -66,11 +65,15 @@ const ContactForm = () => {
                     <h5 class="d-inline mr-3">Email:</h5>
                     <p class="d-inline">{data.email}</p>
                   </div>
-                  <h5 class="d-inline mr-3">Patient Type:</h5>
-                  <p class="d-inline">{data.patientType}</p>
-                  <div></div>
-                  <h5 class="d-inline mr-3">Message:</h5>
-                  <p class="d-inline">{data.message}</p>
+                  <div>
+                    <h5 class="d-inline mr-3">Patient Type:</h5>
+                    <p class="d-inline">{data.patientType}</p>
+                  </div>
+                  <div>
+                    <h5 class="d-inline mr-3">Message:</h5>
+                    <p class="d-inline">{data.message}</p>
+                  </div>
+                  <div>{formattedDate}</div>
                 </div>
               </div>
             </div>

@@ -3,7 +3,7 @@ import api from "../../services/api";
 import { Spinner } from "reactstrap";
 import html2canvas from "html2canvas";
 
-const Appointment = () => {
+const ContactForm = () => {
   const divRef = useRef(null);
 
   const [data, setData] = useState("");
@@ -20,7 +20,7 @@ const Appointment = () => {
   function handleDownloadClick() {
     html2canvas(divRef.current).then((canvas) => {
       const link = document.createElement("a");
-      link.download = "patient-appointments-detail.png";
+      link.download = "client-detail.png";
       link.href = canvas.toDataURL();
       link.click();
     });
@@ -91,4 +91,4 @@ const Appointment = () => {
     </div>
   );
 };
-export default Appointment;
+export default ContactForm;

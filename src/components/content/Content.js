@@ -6,7 +6,7 @@ import Topbar from "./Topbar";
 import Blog from "../Blog";
 import News from "../News";
 import NewsList from "../NewsList";
-import Appointments from "../Appointment";
+import ContactForm from "../ContactForm";
 import BlogList from "../BlogList";
 import EditBlog from "../BlogList/blogEdit";
 import EditNews from "../NewsList/editNews";
@@ -31,7 +31,7 @@ const Content = ({ sidebarIsOpen, toggleSidebar }) => (
         component={() => <BlogSeachReasult />}
       />
       <Route exact path="/newsedit" component={() => <EditNews />} />
-      <Route exact path="/appointments" component={() => <Appointments />} />
+      <Route exact path="/contact-form" component={() => <ContactForm />} />
     </Switch>
   </Container>
 );

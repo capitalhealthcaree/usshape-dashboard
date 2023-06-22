@@ -83,9 +83,9 @@ const SideBar = ({ isOpen, toggle }) => (
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink tag={Link} to={"/appointments"}>
+          <NavLink tag={Link} to={"/contact-form"}>
             <FontAwesomeIcon icon={faList} className="mr-2" />
-            Appointments
+            ContactForm
           </NavLink>
         </NavItem>
       </Nav>
